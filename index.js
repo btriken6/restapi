@@ -1,7 +1,7 @@
 const express = require('express');
 const app= express();
 const mongoose = require('mongoose');
-const port =3005
+const port =process.env.PORT || 3005
 
 
 mongoose.connect("mongodb+srv://btriken8:Triken12@cluster0.eei0ody.mongodb.net/?retryWrites=true&w=majority")
